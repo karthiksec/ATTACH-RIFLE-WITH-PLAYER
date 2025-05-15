@@ -1,4 +1,4 @@
-# EXP 5 Attach the rifle to the character in Unreal Engine
+# EXP 4 Attach the rifle to the character in Unreal Engine
 
 ##  Aim
 To create an aiming system (attach and aim a rifle with a character) in Unreal Engine,you’re using a third-person character and a rifle skeletal mesh.
