@@ -1,4 +1,4 @@
-# EXP 5 Ammo Collection and Bullet Spawn System in Unreal Engine
+# EXP 5 Attach the rifle to the character in Unreal Engine
 
 ##  Aim
 To create an aiming system (attach and aim a rifle with a character) in Unreal Engine,you’re using a third-person character and a rifle skeletal mesh.
@@ -19,9 +19,9 @@ Set its Skeletal Mesh to your rifle asset.
 In the Rifle component, set the Parent Socket to something like hand_r (right hand socket).
 
 manually attach in Event Graph:
-
+```
 Rifle->AttachToComponent(Mesh, FAttachmentTransformRules::SnapToTargetNotIncludingScale, "hand_rSocket");
-
+```
 
 ### 3. Add Aiming Mechanism
 
@@ -35,13 +35,16 @@ Add an Action Mapping named Aim (e.g., Right Mouse Button).
 Add a Camera Boom and Follow Camera.
 
 In Event Graph:
+```
 When IsAiming = true, zoom the camera in (FOV) and slightly shift it over the shoulder.
-
+```
 
 ## Output
-![alt text](<rifle man-1.jpg>)
+![rifle man](https://github.com/user-attachments/assets/3b5ae058-072c-4bc4-96ba-5374565482f6)
 
-C:\clg\GAME PROGRAM\rifle bluprint.jpg
+
+![rifle bluprint](https://github.com/user-attachments/assets/8bb07417-9197-4bb5-9f05-c200cbc77c67)
+
 ##  Result
 
 Rifle gets attached to the character's hand and transitions to an aiming pose when you press the aim button. The camera zooms in for better focus, blending aiming animations smoothly.
